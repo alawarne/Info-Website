@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Applications and Databases</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background-ai-image.jpg');
+            background-size: cover;
+            color: #333;
+        }
+        .container {
+            padding: 20px;
+            background: rgba(255, 255, 255, 0.8);
+            margin: 20px;
+            border-radius: 10px;
+        }
+        .interactive {
+            margin-top: 20px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+        #moreInfo {
+            display: none;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Web Applications and Back-End Databases</h1>
+        <p>Web applications are software programs that run on web servers and are accessed through web browsers. Unlike traditional desktop applications, web apps do not require installation on a user's device. Instead, they rely on a combination of server-side and client-side scripts to provide functionality and interactivity.</p>
+
+        <h2>Interaction Between Web Applications and Databases</h2>
+        <p>The interaction between web applications and back-end databases involves the following steps:</p>
+        <ul>
+            <li>User Interaction</li>
+            <li>Request</li>
+            <li>Server Processing</li>
+            <li>Database Interaction</li>
+            <li>Response</li>
+        </ul>
+
+        <div class="interactive">
+            <button onclick="showMoreInfo()">Show More Info</button>
+            <div id="moreInfo">
+                <h3>Detailed Example: User Authentication</h3>
+                <p>Consider a user logging into a web application:</p>
+                <ul>
+                    <li>User Interaction: The user enters their credentials and clicks the "Login" button.</li>
+                    <li>Request: The client-side code sends a POST request to the server with the login details.</li>
+                    <li>Server Processing: The server-side script checks the credentials against the database.</li>
+                    <li>Database Interaction: The database verifies the user’s credentials.</li>
+                    <li>Response: The server sends a response indicating whether the login was successful or not.</li>
+                </ul>
+            </div>
+        </div>
+
+        <h2>Use Cases in Businesses</h2>
+        <h3>Intranet Applications</h3>
+        <p>Intranet applications are used within an organization to facilitate internal processes. Examples include employee portals and project management tools.</p>
+
+        <h3>Internet Applications</h3>
+        <p>Internet applications are used by businesses to interact with customers and clients. Examples include e-commerce platforms and customer relationship management (CRM) systems.</p>
+    </div>
+
+    <script>
+        function showMoreInfo() {
+            var moreInfo = document.getElementById('moreInfo');
+            if (moreInfo.style.display === 'none' || moreInfo.style.display === '') {
+                moreInfo.style.display = 'block';
+            } else {
+                moreInfo.style.display = 'none';
+            }
+        }
+    </script>
+</body>
+</html>
